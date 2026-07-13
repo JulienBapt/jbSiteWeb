@@ -11,7 +11,7 @@ import { EyebrowComponent } from '../../../shared/section-eyebrow/section-eyebro
     <section class="section-pourqui" aria-label="Pour qui est fait ce coaching">
       <div class="pourqui-header">
         <app-eyebrow text="Soyons honnêtes" color="light" />
-        <h2 class="section-title fade-up" #fadeEl>Ce coaching est fait pour toi ?</h2>
+        <h2 class="section-title fade-up" #fadeEl>Tout le monde n'est pas fait pour ça.</h2>
       </div>
       <div class="pourqui-grid fade-up" #fadeEl>
         <div class="pourqui-col">

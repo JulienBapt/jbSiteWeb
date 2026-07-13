@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
       <div class="hero-left">
         <span class="eyebrow">Coaching Présentiel · Fresnes &amp; Antony</span>
         <h1 class="hero-title">En salle.<br>Côte à <em>côte.</em><br>Sans filtre.</h1>
-        <p class="hero-sub">Certains progressent mieux quand quelqu'un est là, en face, qui voit ce que tu fais — et qui ne te laisse pas te mentir à toi-même.</p>
+        <p class="hero-sub">Certaines personnes progressent mieux quand quelqu'un est là, en face, pour les encourager, les corriger et leur rappeler leurs engagements quand elles commencent à s'en éloigner.</p>
         <div class="hero-disclaimer">
           <strong>Ce coaching n'est pas fait pour tout le monde.</strong>
-          Il demande un investissement réel — en temps, en énergie, en engagement.
-          Si tu cherches une solution facile, tu ne trouveras pas ça ici.
+          Il demande un investissement réel : en temps, en énergie, en engagement.
+          Si tu cherches une solution miracle et facile, tu ne trouveras pas ça ici.
         </div>
       </div>
       <div class="hero-right">

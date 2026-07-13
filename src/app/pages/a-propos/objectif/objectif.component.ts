@@ -11,7 +11,7 @@ import { AnimationService } from '../../../core/animation.service';
     <section class="section-objectif" aria-label="Mon objectif">
       <div class="objectif-inner">
         <p class="eyebrow fade-up" #fadeEl>Mon objectif</p>
-        <h2 class="section-title fade-up" #fadeEl>Que tu n'aies plus besoin de moi.</h2>
+        <h2 class="section-title fade-up" #fadeEl>Que tu n'aies plus besoin de moi</h2>
         <div class="body-text fade-up" #fadeEl>
           <p>Je veux que tu deviennes la personne que tu veux être. Pas juste physiquement — dans ta tête, dans ta vie.</p>
           <p>Que tu comprennes ce que tu fais. Pourquoi tu le fais. Que tu sois <strong>autonome.</strong></p>

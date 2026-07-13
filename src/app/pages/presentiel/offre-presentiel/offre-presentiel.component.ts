@@ -43,7 +43,7 @@ export class OffrePresentielComponent implements AfterViewInit {
   cards = [
     { num: '01', name: 'Séances encadrées', tag: 'En salle · Corrections en direct', desc: "Je suis là, à côté de toi. Je vois ce que tu fais, je corrige en temps réel, je pousse quand c'est le moment. Pas de place pour les approximations." },
     { num: '02', name: 'Programme personnalisé', tag: 'Sur-mesure · Évolutif', desc: "Construit autour de tes objectifs, ton niveau et tes contraintes. Réajusté selon ta progression réelle — pas un programme générique recyclé." },
-    { num: '03', name: 'Nutrition & suivi', tag: 'WhatsApp · Sans régime draconien', desc: "Conseils nutritionnels adaptés à ton objectif, disponibilité WhatsApp entre les séances. Pas d'aliments interdits — des habitudes qui tiennent." },
+    { num: '03', name: 'Nutrition & suivi', tag: 'WhatsApp · Sans régime draconien', desc: "Conseils nutritionnels adaptés à ton objectif, disponibilité WhatsApp entre les séances. Pas de liste d'aliments interdits mais <strong>des habitudes qui te suivront toute ta vie.</strong>" },
   ];
   constructor(private anim: AnimationService) {}
   ngAfterViewInit(): void {

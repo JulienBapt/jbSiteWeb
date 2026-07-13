@@ -19,8 +19,8 @@ import { AnimationService } from '../../../core/animation.service';
           La dernière<br>transformation<br>dont tu auras<br><em>besoin.</em>
         </h1>
         <p class="hero-sub fade-up" #fadeEl>
-          Un accompagnement personnalisé — entraînement, nutrition, suivi continu —
-          construit pour que tu <strong>n'aies plus jamais besoin de coach.</strong>
+          Entraînement. Nutrition. Suivi continu. Un accompagnement personnalisé conçu
+          pour que tu <strong>n'aies plus jamais besoin d'un coach.</strong>
         </p>
         <div class="hero-actions fade-up" #fadeEl>
           <a routerLink="/contact" class="btn-gold">Réserve ton bilan gratuit →</a>

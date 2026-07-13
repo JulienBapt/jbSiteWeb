@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
       <div class="presentiel-text">
         <span class="eyebrow">Tu préfères le terrain ?</span>
         <h2 class="section-title">Le coaching présentiel,<br>pour aller plus loin.</h2>
-        <p class="presentiel-desc">Si tu as besoin de corrections techniques sur tes mouvements, d'une présence physique pour te challenger, ou d'un œil expert en direct sur ta pratique — je suis aussi disponible en salle à Fresnes et Antony.</p>
+        <p class="presentiel-desc">Si tu as besoin de corrections techniques sur tes mouvements, d'une présence en direct pour te challenger, ou d'un œil expert sur ta pratique. Je suis aussi disponible en salle à Fresnes et Antony.</p>
       </div>
       <a routerLink="/presentiel" class="btn-outline">Découvrir le présentiel →</a>
     </section>

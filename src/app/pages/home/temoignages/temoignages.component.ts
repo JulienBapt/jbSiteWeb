@@ -201,14 +201,14 @@ export class TemoignagesComponent implements AfterViewInit, OnDestroy {
       detail: 'Coaching · Avis Google vérifié',
     },
     {
-      text: "Me faire coacher par JB a été le meilleur investissement de 2025. Au-delà du sport, il m'a accompagnée dans mon rééquilibrage alimentaire. Même après 6 mois, les routines me permettent de continuer seule.",
+      text: "Me faire coacher par JB a été le meilleur investissement de 2025.  Grâce à lui, j’ai créé de vraies habitudes sur le sport, l’alimentation et le sommeil. Les routines me permettent aujourd'hui de continuer sur ma lancée même en étant seule.",
       author: 'Chloé',
       detail: '6 mois de coaching · Avis Google vérifié',
     },
     {
       text: "Un grand merci à JB ! Coach très à l'écoute, motivant et capable de s'adapter à toutes les situations. Cet accompagnement m'a aussi permis de reprendre confiance en moi et de traverser une période difficile.",
       author: 'Carina',
-      detail: 'Coaching · Avis Google vérifié',
+      detail: '1 an de coaching · Avis Google vérifié',
     },
     {
       text: "JB s'est adapté à mon profil et ma pathologie, et m'a permis de progresser rapidement. Je suis plus tonique et je me sens en meilleure forme.",
@@ -218,7 +218,7 @@ export class TemoignagesComponent implements AfterViewInit, OnDestroy {
     {
       text: "Très bon coach qui est là pour te pousser jusqu'au bout de ton objectif. Je le recommande fortement. Merci beaucoup Patron !",
       author: 'Vincent',
-      detail: 'Coaching présentiel · Avis Google vérifié',
+      detail: '6 mois de coaching présentiel · Avis Google vérifié',
     },
   ];
 

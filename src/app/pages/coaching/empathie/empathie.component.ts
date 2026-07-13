@@ -13,8 +13,8 @@ import { AnimationService } from '../../../core/animation.service';
           <h2 class="section-title">Tu ne manques pas de volonté.<br>Il te manque un cadre.</h2>
           <div class="body-text">
             <p>Les régimes improbables, impossibles à tenir dans la vie réelle. Les programmes génériques qui ne prennent pas en compte qui tu es. Les coachs qui disparaissent entre deux séances. <strong>Ce n'est pas un manque de motivation. C'est un manque de méthode adaptée à toi.</strong></p>
-            <p>J'ai été là aussi. Pas le même chemin, mais la même sensation d'essayer sans trouver ce qui tient dans la durée. C'est pour ça que j'ai construit un accompagnement qui part de toi — de ce que tu aimes manger, de comment tu vis, de ce que tu veux vraiment.</p>
-            <p>Pas de ton image idéale dans un magazine. <strong>De toi.</strong></p>
+            <p>J'ai été là aussi. Pas le même chemin, mais la même sensation d'essayer sans trouver ce qui tient dans la durée. C'est pour ça que j'ai construit un accompagnement qui part de toi : de ce que tu aimes manger, de comment tu vis, de ce que tu veux vraiment.</p>
+            <p>Pas d'un idéal irréalisable. <strong>De toi.</strong></p>
           </div>
         </div>
         <div class="empathie-right fade-up" #fadeEl>

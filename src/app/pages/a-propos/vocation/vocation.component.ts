@@ -11,9 +11,9 @@ import { AnimationService } from '../../../core/animation.service';
         <p class="eyebrow fade-up" #fadeEl>Ma vocation</p>
         <h2 class="section-title fade-up" #fadeEl>Être le guide que j'aurais aimé avoir</h2>
         <div class="body-text fade-up" #fadeEl>
-          <p>Comme tu as pu le comprendre, fût un temps j'étais comme toi. Je cherchais des réponses partout, en espérant des résultats sans vraiment savoir par où commencer.</p>
+          <p>Comme tu l'as compris, j'ai longtemps été exactement comme toi. Je cherchais des réponses en espérant des résultats, sans vraiment savoir par où commencer.</p>
           <p class="accent"><em>Parce qu'en réalité, la plupart des gens sont capables de changer. Ils ne savent simplement pas comment s'y prendre.</em></p>
-          <p>Désormais je possède ces réponses. Construites sur ma propre expérience, celle de mes clients, et la littérature scientifique.</p>
+          <p>Aujourd'hui, ces réponses, je les possède. Construites sur ma propre expérience , celle de mes clients, et la littérature scientifique.</p>
           <p>Coacher, ce n'est pas juste transmettre des exercices. C'est transmettre des valeurs. Une méthode. Une vision.</p>
           <p><strong>Je veux être cette personne — celle que j'aurais aimé avoir à mes côtés.</strong></p>
         </div>

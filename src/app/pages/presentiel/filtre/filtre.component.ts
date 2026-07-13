@@ -13,8 +13,8 @@ import { AnimationService } from '../../../core/animation.service';
           <h2 class="section-title">Ce coaching est exigeant.<br>C'est voulu.</h2>
           <div class="body-text">
             <p>Je ne cherche pas à remplir un agenda. Je cherche à travailler avec des personnes <strong>vraiment prêtes à changer quelque chose</strong> dans leur vie.</p>
-            <p>Pas prêtes à souffrir — prêtes à s'investir. Ce n'est pas pareil. La souffrance passe. L'engagement, lui, construit.</p>
-            <p>Si tu lis encore ces lignes, tu es probablement dans la bonne case.</p>
+            <p>Pas prêtes à souffrir, prêtes à s'investir. Ce n'est pas pareil. La souffrance c'est passager. L'engagement, lui, est définitif.</p>
+            <p>Si tu lis encore ces lignes, alors tu es probablement dans la bonne case.</p>
           </div>
         </div>
         <div class="filtre-right fade-up" #fadeEl>
@@ -56,12 +56,12 @@ export class FiltreComponent implements AfterViewInit {
   oui = [
     "Tu veux <strong>comprendre ce que tu fais</strong>, pas juste répéter des mouvements sans savoir pourquoi",
     "Tu as besoin d'un <strong>cadre physique et humain</strong> pour tenir dans la durée",
-    "Tu es prêt à <strong>remettre en question certaines habitudes</strong> — alimentaires, sportives, mentales",
+    "Tu es prêt à <strong>remettre en question certaines habitudes et croyances</strong> : alimentaires, sportives, mentales",
   ];
   non = [
     "Tu cherches à perdre 10kg en 3 semaines sans changer ton mode de vie",
     "Tu veux un coach qui te dira ce que tu veux entendre plutôt que ce dont tu as besoin",
-    "Tu n'es pas prêt à t'investir sur la durée — quelques semaines, puis on verra",
+    "Tu n'es pas prêt à t'investir sur la durée. Quelques semaines et puis on verra",
   ];
   constructor(private anim: AnimationService) {}
   ngAfterViewInit(): void {
