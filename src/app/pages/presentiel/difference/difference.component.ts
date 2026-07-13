@@ -12,9 +12,9 @@ import { AnimationService } from '../../../core/animation.service';
           <span class="eyebrow">Pourquoi le présentiel</span>
           <h2 class="section-title">Ce que la présence<br>change vraiment.</h2>
           <div class="body-text">
-            <p>En ligne, tu t'entraînes seul. C'est bien — si tu as la discipline pour ça. En présentiel, tu ne peux pas te mentir. Je vois ton dos qui s'arrondit, ta respiration qui déraille, le moment où tu pourrais pousser encore mais tu t'arrêtes.</p>
-            <p>Ce regard externe — bienveillant mais précis — c'est souvent ce qui fait la différence entre stagner et progresser.</p>
-            <p>Je ne suis pas là pour t'épuiser. Je suis là pour que chaque séance compte vraiment.</p>
+            <p>En ligne, tu t'entraînes seul. Et c'est bien, mais seulement si tu as la discipline pour ça. En présentiel, tu as quelqu'un pour te motiver, t'accompagner. Et tu ne peux pas te mentir. Je vois ton dos qui s'arrondit, ta respiration qui se déteriore, le moment où tu pourrais pousser encore un peu plus loin mais tu t'arrêtes.</p>
+            <p>Ce regard externe, certes bienveillant mais précis, c'est souvent ce qui fait la différence entre stagner voir se blesser et progresser.</p>
+            <p>Je ne suis pas là pour t'épuiser. Je suis simplement là pour que chaque séance compte vraiment.</p>
           </div>
         </div>
         <div class="diff-stats fade-up" #fadeEl>
@@ -45,7 +45,7 @@ export class DifferenceComponent implements AfterViewInit {
   @ViewChildren('fadeEl') fadeEls!: QueryList<ElementRef>;
   private platformId = inject(PLATFORM_ID);
   stats = [
-    { value: 'Fresnes', label: 'Basic-Fit · Accès salle pendant la séance' },
+    { value: 'Fresnes', label: 'Au Basic-Fit de La cerisaie · Matériel à disposition' },
     { value: '1 à 3', label: 'séances par semaine selon ta formule' },
     { value: 'Solo ou duo', label: 'Formules individuelles et en binôme disponibles' },
     { value: '6j/7', label: 'Disponibilité WhatsApp entre les séances' },

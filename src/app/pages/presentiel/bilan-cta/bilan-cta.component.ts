@@ -11,14 +11,14 @@ import { AnimationService } from '../../../core/animation.service';
     <section class="section-bilan" id="bilan" aria-label="Bilan découverte">
       <div class="bg-text" aria-hidden="true">PRÉSENTIEL</div>
       <div class="bilan-inner">
-        <p class="eyebrow fade-up" #fadeEl>La première étape</p>
+        <p class="eyebrow fade-up" #fadeEl>Le premier contact</p>
         <h2 class="bilan-title fade-up" #fadeEl>Le bilan<br>découverte.</h2>
-        <p class="bilan-sub fade-up" #fadeEl>Pas un appel commercial. Une vraie séance de 40 minutes — on parle de toi, de là où tu en es, de ce que tu veux vraiment. On voit si on est alignés. Et si c'est le cas, on construit quelque chose ensemble.</p>
+        <p class="bilan-sub fade-up" #fadeEl>Un premier échange d'une heure pour apprendre à te connaître, comprendre ton parcours, ce que tu as déjà essayé et ce qui pourrait réellement faire avancer ta progression.</p>
         <p class="bilan-warning fade-up" #fadeEl>
           <em>"On ne peut pas sauver quelqu'un qui ne veut pas être sauvé."<br>
-          Je sélectionne mes clients. Pas par snobisme — par conviction que la motivation doit venir de toi.</em>
+          Je sélectionne mes clients. Pas par snobisme mais par intime conviction que la motivation doit venir de toi.</em>
         </p>
-        <a routerLink="/contact" class="btn-dark fade-up" #fadeEl>Demander un bilan découverte →</a>
+        <a routerLink="/contact" class="btn-dark fade-up" #fadeEl>Demander ton bilan découverte →</a>
         <p class="bilan-note fade-up" #fadeEl>Je réponds dans les 48h · Fresnes &amp; Antony</p>
       </div>
     </section>

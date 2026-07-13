@@ -39,10 +39,10 @@ export class ProcessComponent implements AfterViewInit {
   @ViewChildren('fadeEl') fadeEls!: QueryList<ElementRef>;
   private platformId = inject(PLATFORM_ID);
   steps = [
-    { num: '01', name: 'Le questionnaire', desc: "Tu remplis un formulaire court sur ta situation, tes objectifs et tes habitudes. Je prends connaissance de ton profil avant qu'on se parle." },
-    { num: '02', name: 'Le bilan', desc: "Un appel de 30 minutes. On fait le point ensemble. Je valide que je suis la bonne personne pour toi — et inversement." },
-    { num: '03', name: 'Le programme', desc: "Je construis ton programme d'entraînement et ta stratégie nutritionnelle sur-mesure. Rien de générique. Tout pensé pour toi." },
-    { num: '04', name: 'Le suivi', desc: "Tu avances. Je suis là. On ajuste, on progresse. Jusqu'à ce que tu atteignes ce que tu es venu chercher." },
+    { num: '01', name: 'Le questionnaire', desc: "Tu remplis le questionnaire afin que je puisse mieux comprendre ta <strong>situation</strong>, tes <strong>habitudes</strong> et ce que tu aimerais changer avant notre appel." },
+    { num: '02', name: 'Le bilan', desc: "Un appel de <strong>30 min</strong>. On échange sur <strong>tes objectifs</strong> et ce que tu recherches vraiment, tout en voyant si le courant passe : un accompagnement, ça reste avant tout une <strong>relation de confiance</strong>." },
+    { num: '03', name: 'Le programme', desc: "Grâce aux informations que j’ai récoltées, je construis ton programme d’entraînement et ta stratégie nutritionnelle sur mesure. Le but : créer quelque chose qui <strong>s’intègre pleinement dans ton quotidien</strong>." },
+    { num: '04', name: 'Le suivi', desc: "Au cours de ta transformation, on <strong>avance ensemble</strong>. Un pépin ? Une réussite ? On s’adapte, on ajuste et on continue d’avancer jusqu’à <strong>atteindre tes objectifs</strong> !" },
   ];
   constructor(private anim: AnimationService) {}
   ngAfterViewInit(): void {

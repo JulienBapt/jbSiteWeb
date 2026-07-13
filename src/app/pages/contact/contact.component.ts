@@ -13,7 +13,7 @@ import { SeoService } from '../../core/seo.service';
         <div class="contact-left">
           <span class="eyebrow">Première étape</span>
           <h1 class="contact-title">Dis-moi qui tu es.<br>Je te dirai si on peut<br>travailler ensemble.</h1>
-          <p class="contact-desc">Ce questionnaire me permet de comprendre ta situation avant qu'on se parle. Pas de bilan surprise — juste un échange préparé, concret, utile pour toi comme pour moi.</p>
+          <p class="contact-desc">Ce questionnaire me permet de comprendre un peu mieux ta situation avant qu'on se parle. Pas de contrôle surprise, juste une conversation, utile pour toi comme pour moi.</p>
           <p class="contact-note">Je réponds sous 48h. Si ton profil correspond, je t'envoie mon lien pour prendre rendez-vous.</p>
 
           <div class="contact-infos">
@@ -24,7 +24,7 @@ import { SeoService } from '../../core/seo.service';
             <div class="info-item">
               <span class="info-label">Réseaux sociaux</span>
               <span class="info-value">
-                <a href="https://www.instagram.com/coronacoaching.fr" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.instagram.com/jeanbaptiste.corona/?hl=fr" target="_blank" rel="noopener noreferrer">Instagram</a>
               </span>
             </div>
           </div>

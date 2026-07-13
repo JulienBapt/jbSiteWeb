@@ -9,7 +9,7 @@ import { AnimationService } from '../../../core/animation.service';
     <section class="section-temoignages" aria-label="Témoignages coaching présentiel">
       <div class="header fade-up" #fadeEl>
         <span class="eyebrow">Ils l'ont fait</span>
-        <h2 class="section-title">Des mots qui valent<br>mieux que les miens.</h2>
+        <h2 class="section-title">Leur parole a plus<br>de poids que la mienne.</h2>
       </div>
       <div class="temoignages-grid">
         @for (t of temoignages; track t.author) {
@@ -43,10 +43,10 @@ export class TemoignagesPresentielComponent implements AfterViewInit {
   @ViewChildren('fadeEl') fadeEls!: QueryList<ElementRef>;
   private platformId = inject(PLATFORM_ID);
   temoignages = [
-    { text: "JB a été pour moi une source de motivation mais aussi de reconstruction. Il est à l'écoute sur le plan physique comme mental. +++confiance en moi, appris à écouter mon corps, repousser mes limites. Mon meilleur investissement 2025.", author: 'Marie-Stéphanie', detail: 'Coaching présentiel · Avis Google vérifié' },
-    { text: "JB s'est adapté à mon profil et ma pathologie, et m'a permis de progresser rapidement. Je suis plus tonique et je me sens en meilleure forme.", author: 'Sacha', detail: 'Coaching présentiel · Avis Google vérifié' },
-    { text: "Très bon coach qui est là pour te pousser jusqu'au bout de ton objectif. Je le recommande fortement. Merci beaucoup Patron !", author: 'Vincent', detail: 'Coaching présentiel · Avis Google vérifié' },
-    { text: "Un grand merci à JB ! Coach très à l'écoute, motivant et capable de s'adapter à toutes les situations. Le suivi sportif et nutritionnel est vraiment de qualité.", author: 'Carina', detail: 'Coaching présentiel · Avis Google vérifié' },
+    { text: "JB a été pour moi une source de motivation mais aussi de reconstruction. Il est à l'écoute sur le plan physique comme mental. +++confiance en moi, appris à écouter mon corps, repousser mes limites. Mon meilleur investissement 2025.", author: 'Marie-Stéphanie', detail: 'Coaching présentiel 3 mois · Avis Google vérifié' },
+    { text: "JB s'est adapté à mon profil et ma pathologie, et m'a permis de progresser rapidement. J'ai pu constaster de réels changements physique, je suis plus tonique et je me sens en meilleure forme.", author: 'Sacha', detail: 'Coaching présentiel 6 mois · Avis Google vérifié' },
+    { text: "Très bon coach qui est là pour te pousser jusqu'au bout de ton objectif. Je le recommande fortement. Merci beaucoup « Patron » !", author: 'Vincent', detail: 'Coaching présentiel 6 mois · Avis Google vérifié' },
+    { text: "Un grand merci à JB ! Coach très à l'écoute, motivant et capable de s'adapter à toutes les situations. Le suivi sportif et nutritionnel est vraiment de qualité.", author: 'Carina', detail: 'Coaching présentiel duo 1 an · Avis Google vérifié' },
   ];
   constructor(private anim: AnimationService) {}
   ngAfterViewInit(): void {

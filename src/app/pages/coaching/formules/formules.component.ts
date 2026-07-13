@@ -23,7 +23,7 @@ interface Formule {
       <div class="formules-intro fade-up" #fadeEl>
         <span class="eyebrow">Les formules</span>
         <h2 class="section-title">Choisis ton engagement.</h2>
-        <p class="formules-desc">Un vrai changement prend du temps. Pas parce que c'est difficile — parce que les habitudes se construisent dans la durée. Ces formules sont pensées pour ça : te donner le cadre et le temps nécessaires pour que les résultats tiennent.</p>
+        <p class="formules-desc">Un vrai changement, ça prend du temps. Pas parce que c'est particulièrement difficile, mais parce que les habitudes se construisent sur la durée. Ces formules sont pensées pour ça : te donner le cadre et le temps nécessaires pour que les résultats tiennent.</p>
       </div>
       <div class="formules-grid">
         @for (f of formules; track f.name) {
@@ -42,7 +42,7 @@ interface Formule {
           </div>
         }
       </div>
-      <p class="formules-note fade-up" #fadeEl>Une situation particulière ? <a routerLink="/contact">Contacte-moi directement</a> — j'étudie chaque demande.</p>
+      <p class="formules-note fade-up" #fadeEl>Une situation particulière ? <a routerLink="/contact">Contacte-moi directement</a>, j'étudie chaque demande.</p>
     </section>
   `,
   styles: [`
@@ -70,9 +70,9 @@ export class FormulesComponent implements AfterViewInit {
   @ViewChildren('fadeEl') fadeEls!: QueryList<ElementRef>;
   private platformId = inject(PLATFORM_ID);
   formules: Formule[] = [
-    { duration: '3 mois', name: 'Fondation', price: '900€', priceNote: '300€ / mois · ou 855€ comptant', comptant: '−5% en paiement comptant', features: ["Bilan initial complet", "Programme d'entraînement 100% personnalisé", "Accompagnement nutritionnel adapté", "Suivi WhatsApp 6j/7", "Validation des repas et des séances", "Point hebdomadaire le week-end", "Ajustements en continu selon tes retours", "Bilan de fin de formule"] },
-    { duration: '6 mois', name: 'Transformation', price: '1 600€', priceNote: '267€ / mois · ou 1 520€ comptant', comptant: '−5% en paiement comptant', featured: true, badge: 'Le plus choisi', features: ["Tout ce qui est inclus dans Fondation", "Visio mensuelle de 30 minutes", "Suivi de progression structuré", "Réajustements approfondis à mi-parcours", "À mi-chemin de l'autonomie"] },
-    { duration: '12 mois', name: 'Autonomie', price: '2 700€', priceNote: '225€ / mois · ou 2 565€ comptant', comptant: '−5% en paiement comptant', features: ["Tout ce qui est inclus dans Transformation", "Visio bimensuelle de 30 minutes", "Montée en autonomie progressive", "À la fin : tu sais t'entraîner et manger sans moi", "La formule qui correspond à ma philosophie"] },
+    { duration: '3 mois', name: 'Fondation', price: '900€', priceNote: '300€ / mois · ou 855€ comptant', comptant: '−5% en paiement comptant', features: ["Bilan initial complet", "Programme d'entraînement 100% personnalisé", "Accompagnement nutritionnel", "Suivi WhatsApp 6j/7", "Validation des repas et des séances", "Ajustements en continu selon tes retours & progrès", "Création de base solide"] },
+    { duration: '6 mois', name: 'Transformation', price: '1 600€', priceNote: '267€ / mois · ou 1 520€ comptant', comptant: '−5% en paiement comptant', featured: true, badge: 'Le plus choisi', features: ["Tout ce qui est inclus dans <strong>Fondation</strong>", "Bilan vidéo mensuel de 30 minutes", "Point hebdomadaire le week-end", "Réajustements approfondis à mi-parcours", "À mi-chemin de l'autonomie", "Bilan de fin de formule"] },
+    { duration: '12 mois', name: 'Autonomie', price: '2 700€', priceNote: '225€ / mois · ou 2 565€ comptant', comptant: '−5% en paiement comptant', features: ["Tout ce qui est inclus dans <strong>Transformation</strong>", "Accompagnement pensé sur le long terme", "Montée en autonomie progressive", "À la fin : tu sais t'entraîner et manger sans moi", "La formule qui correspond le plus à ma philosophie"] },
   ];
   constructor(private anim: AnimationService) {}
   ngAfterViewInit(): void {
