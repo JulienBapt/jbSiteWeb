@@ -7,8 +7,9 @@ import { AnimationService } from '../../../core/animation.service';
   selector: 'app-hero',
   standalone: true,
   imports: [RouterLink],
-  template: `<!--
-    style="background-image: url('/assets/images/jb-hero.jpg');"-->
+  template: `
+    <!-- Preload tells the browser: "this image is important, load it early with high priority" -->
+    <link rel="preload" as="image" href="/images/jb-hero.jpg" fetchpriority="high">
     <section class="hero" aria-label="Présentation principale">
       <div class="hero-left">
         <span class="hero-tag fade-up" #fadeEl>Coach Sportif Certifié · En ligne & Présentiel</span>
@@ -27,32 +28,22 @@ import { AnimationService } from '../../../core/animation.service';
           <a routerLink="/a-propos" class="btn-ghost">Me découvrir</a>
         </div>
       </div>
-      <!--<div class="hero-right fade-up" #fadeEl>
-        <img
-          src="/assets/images/jb-hero.jpg"
-          alt="Jean-Baptiste Corona, coach sportif certifié, en salle de musculation"
-          loading="eager"
-          fetchpriority="high"
-          width="800"
-          height="1000"
-        />
-      </div>-->
     </section>
   `,
   styles: [`
     .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       padding-top: 80px;
       background: var(--cream);
     }
 
     .hero-left {
+      min-height: 900px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 4rem 4rem 4rem 5rem;
+      background-size: cover;
+      background-image: url('/assets/images/jb-hero.jpg');
     }
 
     .hero-right {
@@ -159,7 +150,10 @@ import { AnimationService } from '../../../core/animation.service';
 
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-left { padding: 6rem 1.5rem 3rem; }
+      .hero-left {
+        padding: 6rem 1.5rem 3rem;
+        background-image: url('/assets/images/jb-hero-min.jpg');
+      }
       .hero-right { height: 65vw; &::after { background: linear-gradient(to bottom, var(--cream) 0%, transparent 20%); } }
     }
   `]

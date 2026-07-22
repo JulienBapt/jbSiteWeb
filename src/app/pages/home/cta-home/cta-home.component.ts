@@ -10,8 +10,8 @@ import { AnimationService } from '../../../core/animation.service';
   template: `
     <section class="section-cta" aria-label="Appel à l'action">
       <div class="cta-parent">
-      <div class="cta-bg-text" aria-hidden="true">CORONA</div>
       <div class="cta-inner cta-child">
+        <div class="cta-bg-text" aria-hidden="true">CORONA</div>
         <p class="cta-eyebrow fade-up" #fadeEl>Prêt à commencer ?</p>
         <h2 class="cta-headline fade-up" #fadeEl>Le premier pas,<br>c'est maintenant.</h2>
         <p class="cta-sub fade-up" #fadeEl>
@@ -46,7 +46,7 @@ import { AnimationService } from '../../../core/animation.service';
       position: absolute;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 18rem;
+      font-size: 14rem;
       color: rgba(255,255,255,0.07);
       top: 50%;
       left: 50%;
@@ -123,6 +123,10 @@ import { AnimationService } from '../../../core/animation.service';
       width: 50%;
       align-items: center;
       align-content: center;
+    }
+    
+    @media (max-width: 1600px) {
+      .cta-bg-text { font-size: 10vw; }
     }
     
     @media (max-width: 900px) {

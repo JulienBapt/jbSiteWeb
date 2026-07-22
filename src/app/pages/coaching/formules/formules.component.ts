@@ -38,7 +38,13 @@ interface Formule {
               @for (feat of f.features; track feat) { <li>{{ feat }}</li> }
             </ul>
             <p class="formule-comptant">{{ f.comptant }}</p>
-            <a routerLink="/contact" fragment="questionnaire" class="formule-cta">Je commence →</a>
+            <div style="
+              flex-grow: 1;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              width: 100%">
+            <a routerLink="/contact" fragment="questionnaire" class="formule-cta">Je commence →</a></div>
           </div>
         }
       </div>
@@ -52,7 +58,7 @@ interface Formule {
     .section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(2rem, 3.5vw, 3rem); text-transform: uppercase; color: var(--text); margin-bottom: 1rem; }
     .formules-desc { font-size: 0.95rem; font-weight: 300; line-height: 1.8; color: var(--text-muted); }
     .formules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(201,168,76,0.3); }
-    .formule-card { background: var(--cream); padding: 3rem 2.5rem; position: relative; transition: background 0.3s; &:hover { background: var(--cream-dark); } &.featured { background: var(--dark); &:hover { background: var(--dark-mid); } } }
+    .formule-card { display: flex; flex-direction: column;background: var(--cream); padding: 3rem 2.5rem; position: relative; transition: background 0.3s; &:hover { background: var(--cream-dark); } &.featured { background: var(--dark); &:hover { background: var(--dark-mid); } } }
     .formule-badge { position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--dark); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.35rem 1rem; white-space: nowrap; }
     .formule-duration { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 1.5rem; display: block; .featured & { color: rgba(201,168,76,0.7); } }
     .formule-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 2rem; text-transform: uppercase; color: var(--text); margin-bottom: 0.5rem; .featured & { color: #fff; } }
@@ -61,7 +67,7 @@ interface Formule {
     .formule-divider { width: 30px; height: 1px; background: var(--gold); margin-bottom: 2rem; }
     .formule-features { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2.5rem; li { font-size: 0.85rem; font-weight: 300; color: var(--text-muted); padding-left: 1.2rem; position: relative; &::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 5px; height: 1px; background: var(--gold); } } .featured & li { color: rgba(255,255,255,0.55); } }
     .formule-comptant { font-size: 0.72rem; color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem; .featured & { color: rgba(255,255,255,0.3); } }
-    .formule-cta { display: block; text-align: center; background: transparent; color: var(--gold-dark); font-family: 'Barlow', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; padding: 0.9rem; border: 1px solid var(--gold); transition: all 0.2s; &:hover { background: var(--gold); color: var(--dark); } .featured & { background: var(--gold); color: var(--dark); border-color: var(--gold); &:hover { background: var(--gold-dark); color: #fff; } } }
+    .formule-cta { display: block; width: 100%; text-align: center; background: transparent; color: var(--gold-dark); font-family: 'Barlow', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; padding: 0.9rem; border: 1px solid var(--gold); transition: all 0.2s; &:hover { background: var(--gold); color: var(--dark); } .featured & { background: var(--gold); color: var(--dark); border-color: var(--gold); &:hover { background: var(--gold-dark); color: #fff; } } }
     .formules-note { text-align: center; margin-top: 2.5rem; font-size: 0.82rem; font-weight: 300; color: var(--text-muted); font-style: italic; a { color: var(--gold-dark); border-bottom: 1px solid var(--gold); padding-bottom: 1px; } }
     @media (max-width: 900px) { .section-formules { padding: 5rem 1.5rem; } .formules-grid { grid-template-columns: 1fr; } }
   `]

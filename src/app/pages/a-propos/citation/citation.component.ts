@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   template: `
     <section class="section-citation" aria-label="Citation d'Aristote">
       <blockquote class="citation-text">
-        Nous sommes ce que nous faisons de manière répétée.<br>
-        L'excellence n'est donc pas un acte, mais une habitude.
+        « Nous sommes ce que nous faisons de manière répétée.<br>
+        L'excellence n'est donc pas un acte, mais une habitude. »
       </blockquote>
       <cite class="citation-author">Aristote</cite>
     </section>
@@ -19,13 +19,6 @@ import { Component } from '@angular/core';
       text-align: center;
       position: relative;
       overflow: hidden;
-      &::before {
-        content: '\x81';
-        position: absolute; top: -2rem; left: 3rem;
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 18rem; color: rgba(255,255,255,0.12);
-        line-height: 1; pointer-events: none;
-      }
     }
     .citation-text {
       font-family: 'Cormorant Garamond', serif;
