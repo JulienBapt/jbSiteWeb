@@ -148,11 +148,15 @@ import { AnimationService } from '../../../core/animation.service';
       &:hover { color: var(--gold-dark); border-color: var(--gold-dark); }
     }
 
+    @media (max-width: 1024px) {
+      .hero-left {
+        background-image: url('/assets/images/jb-hero-min.jpg');
+        }
+    }
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; min-height: auto; }
       .hero-left {
         padding: 6rem 1.5rem 3rem;
-        background-image: url('/assets/images/jb-hero-min.jpg');
       }
       .hero-right { height: 65vw; &::after { background: linear-gradient(to bottom, var(--cream) 0%, transparent 20%); } }
     }

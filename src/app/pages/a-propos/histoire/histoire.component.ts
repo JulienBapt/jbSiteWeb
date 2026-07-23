@@ -70,7 +70,7 @@ import { AnimationService } from '../../../core/animation.service';
     }
     @media (max-width: 900px) {
       .section-histoire { grid-template-columns: 1fr; }
-      .histoire-photo, .histoire-photo-right { height: 60vw; }
+      .histoire-photo, .histoire-photo-right { height: 100vw; }
       .histoire-text { padding: 3rem 1.5rem; border: none; border-top: 1px solid rgba(201,168,76,0.2); }
     }
   `]
