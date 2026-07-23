@@ -42,7 +42,7 @@ export class ConfianceComponent implements AfterViewInit {
   @ViewChildren('fadeEl') fadeEls!: QueryList<ElementRef>;
   private platformId = inject(PLATFORM_ID);
   cest = ["Un accompagnement humain pensé pour s'adapter à ta vie réelle", "Un programme qui évolue avec toi au fil de ta progression", "Une méthode basée sur la science et mon expérience", "Un cadre précis pour t'aider à construire des habitudes saines et durables", "Un investissement dans ta santé, ton énergie et ta confiance en toi"];
-  cestPas = ["Un mode de vie irréaliste centré uniquement autour du fitness", "Une transformation rapide construire au détriment de ta santé physique ou mentale", "Une course à la perfection où le moindre écart devient un échec", "Une transformation sans effort de ta part", "Un petit PDF envoyé à la va vite"];
+  cestPas = ["Un mode de vie irréaliste centré uniquement autour du fitness", "Une transformation rapide construire au détriment de ta santé physique ou mentale", "Une course à la perfection où le moindre écart devient un échec", "Une transformation sans effort de ta part", "Un p'tit PDF envoyé à la va vite"];
   constructor(private anim: AnimationService) {}
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) this.anim.observe(this.fadeEls.map(el => el.nativeElement));

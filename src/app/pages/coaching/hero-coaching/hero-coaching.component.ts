@@ -13,7 +13,7 @@ import { RouterLink } from '@angular/router';
         <p class="hero-sub">
           Tu ne sais pas par où commencer, pire, tu as peut-être même déjà essayé et échoué.
           Un régime impossible à tenir, un entraînement générique, peu ou pas d'amélioration... Puis la démotivation.
-          <em>Cette fois, c'est différent.</em>
+          <br><em>Cette fois, c'est différent.</em>
         </p>
         <a routerLink="/contact" fragment="questionnaire" class="hero-link">Je veux commencer →</a>
       </div>

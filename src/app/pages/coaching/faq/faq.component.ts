@@ -44,9 +44,9 @@ export class FaqComponent {
   faq: FaqItem[] = [
     { q: "Je n'ai jamais fait de musculation, c'est accessible ?", a: "Absolument. Le programme est construit à partir de ton niveau réel. J'ai accompagné des débutants complets comme des sportifs confirmés. Ce qui compte c'est ta motivation, pas ton expérience passée." },
     { q: "Est-ce que je vais devoir me priver de manger ?", a: "Non. Mon approche ne repose pas sur des interdits mais sur des habitudes durables adaptées à ta vie. J'ai moi-même un appétit énorme — je sais ce que c'est, et j'ai trouvé des stratégies qui fonctionnent sans frustration constante." },
-    { q: "Combien de temps avant de voir des résultats ?", a: "Les premiers changements — énergie, sommeil, habitudes — se ressentent souvent en 3 à 4 semaines. Les résultats visibles demandent généralement 8 à 12 semaines de travail régulier. Une transformation durable se construit sur des mois, pas des jours." },
-    { q: "Que se passe-t-il si j'ai une blessure ou un imprévu ?", a: "On adapte. Une blessure, un déménagement, une période chargée — la vie ne s'arrête pas et le programme non plus. C'est précisément pour ça que le suivi continu existe : ajuster en temps réel." },
-    { q: "Quelle est la différence avec le coaching présentiel ?", a: "Le contenu est identique — programme, nutrition, suivi. La différence c'est la présence physique : en présentiel, je supervise ta séance en direct, je corrige tes mouvements en temps réel." },
+    { q: "Combien de temps avant de voir des résultats ?", a: "Les premiers changements : énergie, sommeil, habitudes, confiance en soit, se ressentent souvent à partir de 3 à 4 semaines. Les résultats visibles quant à eux demandent généralement 8 à 12 semaines de travail régulier. Une transformation durable se construit sur des mois, pas des jours." },
+    { q: "Que se passe-t-il si j'ai une blessure ou un imprévu ?", a: "On adapte. Une blessure, un déménagement, une période chargée ou n'importe quelle situation innatendue. La vie ne s'arrête pas et le programme non plus. C'est précisément pour ça que le suivi continu existe : ajuster en temps réel." },
+    { q: "Quelle est la différence avec le coaching présentiel ?", a: "Le contenu du suivi est identique : programme évolutif, nutrition, accompagnement au quotidien. La différence c'est la présence physique : en présentiel, je supervise ta séance en direct, je corrige tes mouvements et te pousse à te dépasser." },
   ];
   toggle(i: number): void {
     this.openIndex.update(v => v === i ? null : i);
