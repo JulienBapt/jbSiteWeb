@@ -12,7 +12,7 @@ import { EyebrowComponent } from '../../../shared/section-eyebrow/section-eyebro
     <section class="section-approche" aria-label="Mon approche">
       <div class="approche-photo fade-up" #fadeEl>
         <img
-          src="/assets/images/jb-approche.jpg"
+          src="/assets/images/jb-approche-left.jpg"
           alt="Jean-Baptiste Corona, coach sportif, en salle de musculation"
           loading="lazy"
           width="800"
@@ -23,12 +23,20 @@ import { EyebrowComponent } from '../../../shared/section-eyebrow/section-eyebro
         </div>
       </div>
       <div class="approche-text">
-        <app-eyebrow text="Mon approche" color="light" />
+        <app-eyebrow text="Qui suis-je ?" color="light" />
         <h2 class="section-title fade-up" #fadeEl>J'ai été là où tu es.</h2>
         <div class="body-text fade-up" #fadeEl>
-          <p>Mon histoire commence à <strong>17 ans, 115kg</strong> pour moins d'1m80, mort de fatigue après avoir couru derrière un bus.</p>
-          <p>Ce jour-là, je ne reconnais pas le petit garçon plein d'énergie et sportif que j'étais. La réalité m'a rattrapé.</p>
-          <p>Alors je décide de tout réapprendre. Comment manger, bouger, progresser. Sans personne pour m'épauler — mais quand je fonce dans le mur, je réitère.</p>
+          <p>Pendant longtemps j'ai ressenti une dissonance avec mon propre corps.</p>
+          <p>Peu confiant et absolument pas fier de ce que je voyais dans le miroir.</p>
+          <p>Alors, à la fin de mon adolescence, je décide de changer.</p>
+          <p>Je perds plus de 30 kilos en quelques mois.</p>
+          <p>Mais surtout, j’ai découvert quelque chose que je ne soupçonnais pas :
+            le sport et la nutrition pouvaient réellement transformer une vie.</p>
+          <p>La mienne d’abord. Puis celle des autres.</p>
+          <p>Aujourd’hui, j’accompagne des personnes comme toi et moi, pour une transformation durable.</p>
+          <p>Mon objectif est clair:</p>
+          <p>Être le coach que j’aurais tant aimé avoir à mes côtés quand j’ai commencé, seul.</p>
+          <p>Pour t'épauler et te rendre autonome, pour de bon !</p>
           <p><strong>En 8 mois, je perds 30kg. Ça y est, la passion est née.</strong></p>
         </div>
         <a routerLink="/a-propos" class="btn-ghost fade-up" #fadeEl>Me découvrir →</a>
@@ -61,14 +69,14 @@ import { EyebrowComponent } from '../../../shared/section-eyebrow/section-eyebro
 
     .approche-overlay {
       position: absolute;
-      bottom: 2rem;
-      left: 2rem;
+      top: 50px;
+      left: 50px;
     }
 
     .approche-label {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 1.8rem;
+      font-size: 50px;
       text-transform: uppercase;
       color: #fff;
       letter-spacing: 0.05em;

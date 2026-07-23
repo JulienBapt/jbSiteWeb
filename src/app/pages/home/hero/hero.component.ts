@@ -32,7 +32,7 @@ import { AnimationService } from '../../../core/animation.service';
   `,
   styles: [`
     .hero {
-      padding-top: 80px;
+      padding-top: 0;
       background: var(--cream);
     }
 
