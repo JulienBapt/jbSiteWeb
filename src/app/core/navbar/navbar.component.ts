@@ -62,7 +62,7 @@ import { NgClass } from '@angular/common';
       font-size: 1rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--text);
+      color: var(--text-white);
       text-decoration: none;
       line-height: 1.2;
 

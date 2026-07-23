@@ -32,8 +32,8 @@ import { AnimationService } from '../../../core/animation.service';
     .process-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 4rem; font-weight: 600; color: rgba(201,168,76,0.18); line-height: 1; margin-bottom: 1.2rem; display: block; }
     .process-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.2rem; text-transform: uppercase; color: #fff; letter-spacing: 0.05em; margin-bottom: 0.8rem; }
     .process-desc { text-align: justify; font-size: 0.82rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.4); }
-    @media (max-width: 1500px) { .process-step { &::after { font-size: 3rem; top: 6rem; }}}
-    @media (max-width: 900px) { .section-process { padding: 5rem 1.5rem; } .process-steps { grid-template-columns: 1fr 1fr; } .process-step { &::after { content: none}}}
+    @media (max-width: 1500px) { .process-step { &::after { font-size: 3rem; top: 6rem; content: none }}}
+    @media (max-width: 900px) { .section-process { padding: 5rem 1.5rem; } .process-steps { grid-template-columns: 1fr 1fr; }}
     @media (max-width: 550px) { .process-header { margin-bottom: 0; } .process-steps { grid-template-columns: repeat(1, 1fr); }}
   `]
 })

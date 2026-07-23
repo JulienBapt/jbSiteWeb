@@ -27,7 +27,6 @@ import { Component } from '@angular/core';
       height: 70vh;
       min-height: 400px;
       overflow: hidden;
-      margin-top: 80px;
 
       img {
         width: 100%; height: 100%;

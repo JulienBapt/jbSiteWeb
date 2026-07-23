@@ -81,7 +81,7 @@ import { AnimationService } from '../../../core/animation.service';
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
       font-size: 1.1rem;
-      color: var(--text-muted);
+      color: var(--text-white);
       margin-bottom: 1.5rem;
     }
 
@@ -91,7 +91,7 @@ import { AnimationService } from '../../../core/animation.service';
       font-size: clamp(3rem, 5.5vw, 5.5rem);
       line-height: 0.95;
       text-transform: uppercase;
-      color: var(--text);
+      color: var(--text-white);
       letter-spacing: 0.01em;
       margin-bottom: 1.8rem;
 
@@ -105,11 +105,11 @@ import { AnimationService } from '../../../core/animation.service';
       font-size: 1rem;
       font-weight: 300;
       line-height: 1.8;
-      color: var(--text-muted);
+      color: var(--text-white);
       max-width: 420px;
       margin-bottom: 2.5rem;
 
-      strong { font-weight: 600; color: var(--text); }
+      strong { font-weight: 600; }
     }
 
     .hero-actions {
@@ -138,7 +138,7 @@ import { AnimationService } from '../../../core/animation.service';
     .btn-ghost {
       font-size: 0.8rem;
       font-weight: 500;
-      color: var(--text-muted);
+      color: var(--text-white);
       text-decoration: none;
       letter-spacing: 0.08em;
       border-bottom: 1px solid var(--text-muted);

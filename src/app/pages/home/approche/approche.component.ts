@@ -114,7 +114,7 @@ import { EyebrowComponent } from '../../../shared/section-eyebrow/section-eyebro
       display: inline-block;
       font-size: 0.8rem;
       font-weight: 500;
-      color: rgba(255,255,255,0.5);
+      color: var(--text-white);
       text-decoration: none;
       letter-spacing: 0.08em;
       border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -129,6 +129,9 @@ import { EyebrowComponent } from '../../../shared/section-eyebrow/section-eyebro
       .section-approche { grid-template-columns: 1fr; }
       .approche-photo { height: 70vw; }
       .approche-text { padding: 3rem 1.5rem; }
+      .approche-label {
+      font-size: 20px;
+      }
     }
   `]
 })
