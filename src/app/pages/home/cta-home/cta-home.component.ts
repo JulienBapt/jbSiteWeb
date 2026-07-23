@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, PLATFORM_ID, inject } from '@angular/core';
-import {isPlatformBrowser} from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { AnimationService } from '../../../core/animation.service';
 
@@ -10,25 +10,26 @@ import { AnimationService } from '../../../core/animation.service';
   template: `
     <section class="section-cta" aria-label="Appel à l'action">
       <div class="cta-parent">
-      <div class="cta-inner cta-child">
         <div class="cta-bg-text" aria-hidden="true">CORONA</div>
-        <p class="cta-eyebrow fade-up" #fadeEl>Prêt à commencer ?</p>
-        <h2 class="cta-headline fade-up" #fadeEl>Le premier pas,<br>c'est maintenant.</h2>
-        <p class="cta-sub fade-up" #fadeEl>
-          Un appel de 20 minutes pour faire le point sur ta situation.<br>
-          Gratuit, sans engagement, sans prise de tête.
-        </p>
-        <a routerLink="/contact" class="btn-dark fade-up" #fadeEl>Réserve ton bilan gratuit →</a>
-        <p class="cta-note fade-up" #fadeEl>Appel de 20 min · Gratuit · Sans engagement</p>
-      </div>
-      <div class="approche-photo fade-up" #fadeEl>
-        <img
-            src="/assets/images/jb-approche.jpg"
-            alt="Jean-Baptiste Corona, coach sportif, en salle de musculation"
-            loading="lazy"
-            height="700"
-        />
-      </div>
+        <div class="cta-inner cta-child">
+          <p class="cta-eyebrow fade-up" #fadeEl>Prêt à commencer ?</p>
+          <h2 class="cta-headline fade-up" #fadeEl>Le premier pas,<br>c'est maintenant.</h2>
+          <p class="cta-sub fade-up" #fadeEl>
+            Un appel de 20 minutes pour faire le point sur ta situation.<br>
+            Gratuit, sans engagement, sans prise de tête.
+          </p>
+          <a routerLink="/contact" class="btn-dark fade-up" #fadeEl>Réserve ton bilan gratuit →</a>
+          <p class="cta-note fade-up" #fadeEl>Appel de 20 min · Gratuit · Sans engagement</p>
+        </div>
+        <div class="approche-photo fade-up" #fadeEl>
+          <img
+              src="/assets/images/jb-approche.jpg"
+              alt="Jean-Baptiste Corona, coach sportif, en salle de musculation"
+              loading="lazy"
+              width="800"
+              height="1000"
+          />
+        </div>
       </div>
     </section>
   `,
@@ -42,13 +43,13 @@ import { AnimationService } from '../../../core/animation.service';
     }
 
     .cta-bg-text {
-      position: relative;
+      position: absolute;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      font-size: 14rem;
+      font-size: 18rem;
       color: rgba(255,255,255,0.07);
       top: 50%;
-      left: 50%;
+      left: 33%;
       transform: translate(-50%, -50%);
       letter-spacing: 0.1em;
       pointer-events: none;
@@ -57,11 +58,10 @@ import { AnimationService } from '../../../core/animation.service';
     }
 
     .cta-inner {
-      display: flex;
-      flex-direction: column;
+      position: relative;
       z-index: 1;
+      max-width: 620px;
       margin: 0 auto;
-      justify-content: center;
     }
 
     .cta-eyebrow {
@@ -123,24 +123,24 @@ import { AnimationService } from '../../../core/animation.service';
       width: 50%;
       align-items: center;
       align-content: center;
-      padding: 20px;
-    }
-    
-    .approche-photo { 
-      display: flex;
-      justify-content: end;
     }
 
-    @media (max-width: 1600px) {
-      .cta-bg-text { font-size: 10vw; }
+    @media (max-width: 1800px) {
+        .cta-bg-text {
+          left: calc(0.5 * (100vw - 800px));
+          font-size: 14rem;
+        }
+    }
+    @media (max-width: 1280px) {
+        .cta-bg-text {
+            left: 50%;
+            font-size: 14rem;
+        }
       .approche-photo { display: none; }
     }
-    
     @media (max-width: 900px) {
       .section-cta { padding: 5rem 1.5rem; }
-      .cta-bg-text { font-size: 8rem;top: 50%;
-        position: absolute;
-        left: 50%; }
+      .cta-bg-text { font-size: 8rem; }
       .cta-parent { flex-direction: column; }
     }
   `]
