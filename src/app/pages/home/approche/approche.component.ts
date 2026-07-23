@@ -26,18 +26,16 @@ import { EyebrowComponent } from '../../../shared/section-eyebrow/section-eyebro
         <app-eyebrow text="Qui suis-je ?" color="light" />
         <h2 class="section-title fade-up" #fadeEl>J'ai été là où tu es.</h2>
         <div class="body-text fade-up" #fadeEl>
-          <p>Pendant longtemps j'ai ressenti une dissonance avec mon propre corps.</p>
-          <p>Peu confiant et absolument pas fier de ce que je voyais dans le miroir.</p>
+          <p>Pendant longtemps j'ai ressenti une dissonance avec mon propre corps. Peu confiant et absolument pas fier de ce que je voyais dans le miroir. </p>
           <p>Alors, à la fin de mon adolescence, je décide de changer.</p>
-          <p>Je perds plus de 30 kilos en quelques mois.</p>
-          <p>Mais surtout, j’ai découvert quelque chose que je ne soupçonnais pas :
-            le sport et la nutrition pouvaient réellement transformer une vie.</p>
-          <p>La mienne d’abord. Puis celle des autres.</p>
+          <p><strong>Je perds plus de 30 kilos en quelques mois.</strong></p>
+          <p>Mais surtout, je découvre quelque chose que je ne soupçonnais pas :
+            le sport et la nutrition peuvent réellement transformer une vie.
+          <strong>La mienne d’abord. Puis celle des autres.</strong></p>
           <p>Aujourd’hui, j’accompagne des personnes comme toi et moi, pour une transformation durable.</p>
-          <p>Mon objectif est clair:</p>
-          <p>Être le coach que j’aurais tant aimé avoir à mes côtés quand j’ai commencé, seul.</p>
-          <p>Pour t'épauler et te rendre autonome, pour de bon !</p>
-          <p><strong>En 8 mois, je perds 30kg. Ça y est, la passion est née.</strong></p>
+          <p>Mon objectif est clair:
+          <br>Être le coach que j’aurais tant aimé avoir à mes côtés quand j’ai commencé, seul, perdu.
+          <br>Pour t'épauler et te rendre autonome, pour de bon !</p>
         </div>
         <a routerLink="/a-propos" class="btn-ghost fade-up" #fadeEl>Me découvrir →</a>
       </div>
