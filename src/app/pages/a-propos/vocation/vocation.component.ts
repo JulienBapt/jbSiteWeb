@@ -57,7 +57,7 @@ import { AnimationService } from '../../../core/animation.service';
     }
     @media (max-width: 900px) {
       .section-vocation { grid-template-columns: 1fr; }
-      .vocation-photo { height: 60vw; order: -1; }
+      .vocation-photo { height: 80vh; order: -1; }
       .vocation-text { padding: 3rem 1.5rem; }
     }
   `]
