@@ -10,8 +10,9 @@ import { Component } from '@angular/core';
         alt="Jean-Baptiste Corona souriant en salle de sport"
         loading="eager"
         fetchpriority="high"
-        width="1440"
-        height="600"
+        srcset="/assets/images/jb-apropos-hero.jpg 1024w,
+         /assets/images/jb-apropos-hero-2x.jpg"
+        sizes="(max-width:1100px) 1024px"
       />
       <div class="hero-overlay">
         <h1 class="hero-title">

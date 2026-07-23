@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, PLATFORM_ID, inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import {isPlatformBrowser} from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { AnimationService } from '../../../core/animation.service';
 
@@ -26,8 +26,7 @@ import { AnimationService } from '../../../core/animation.service';
             src="/assets/images/jb-approche.jpg"
             alt="Jean-Baptiste Corona, coach sportif, en salle de musculation"
             loading="lazy"
-            width="800"
-            height="1000"
+            height="700"
         />
       </div>
       </div>
@@ -43,7 +42,7 @@ import { AnimationService } from '../../../core/animation.service';
     }
 
     .cta-bg-text {
-      position: absolute;
+      position: relative;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       font-size: 14rem;
@@ -58,10 +57,11 @@ import { AnimationService } from '../../../core/animation.service';
     }
 
     .cta-inner {
-      position: relative;
+      display: flex;
+      flex-direction: column;
       z-index: 1;
-      max-width: 620px;
       margin: 0 auto;
+      justify-content: center;
     }
 
     .cta-eyebrow {
@@ -123,15 +123,24 @@ import { AnimationService } from '../../../core/animation.service';
       width: 50%;
       align-items: center;
       align-content: center;
+      padding: 20px;
     }
     
+    .approche-photo { 
+      display: flex;
+      justify-content: end;
+    }
+
     @media (max-width: 1600px) {
       .cta-bg-text { font-size: 10vw; }
+      .approche-photo { display: none; }
     }
     
     @media (max-width: 900px) {
       .section-cta { padding: 5rem 1.5rem; }
-      .cta-bg-text { font-size: 8rem; }
+      .cta-bg-text { font-size: 8rem;top: 50%;
+        position: absolute;
+        left: 50%; }
       .cta-parent { flex-direction: column; }
     }
   `]

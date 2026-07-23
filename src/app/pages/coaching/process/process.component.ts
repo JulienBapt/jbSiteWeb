@@ -16,7 +16,7 @@ import { AnimationService } from '../../../core/animation.service';
           <div class="process-step fade-up" #fadeEl>
             <span class="process-num" aria-hidden="true">{{ step.num }}</span>
             <p class="process-name">{{ step.name }}</p>
-            <p class="process-desc">{{ step.desc }}</p>
+            <p class="process-desc" [innerHTML]="step.desc"></p>
           </div>
         }
       </div>
@@ -28,10 +28,10 @@ import { AnimationService } from '../../../core/animation.service';
     .eyebrow { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
     .section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(2rem, 3.5vw, 3rem); text-transform: uppercase; color: #fff; line-height: 1.05; }
     .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; background: rgba(201,168,76,0.15); }
-    .process-step { background: var(--dark); padding: 2.5rem 2rem; position: relative; &::after { content: '→'; position: absolute; right: -0.4rem; top: 5.5rem; color: rgba(201,168,76,0.35); font-size: 4.1rem; z-index: 1; } &:last-child::after { display: none; } }
+    .process-step { background: var(--dark); padding: 2.5rem 2rem; position: relative; &::after { content: '→'; position: absolute; right: 4.6rem; top: 3.2rem; color: rgb(59 53 32);font-size: 2.7rem; z-index: 1; } &:last-child::after { display: none; } }
     .process-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 4rem; font-weight: 600; color: rgba(201,168,76,0.18); line-height: 1; margin-bottom: 1.2rem; display: block; }
     .process-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.2rem; text-transform: uppercase; color: #fff; letter-spacing: 0.05em; margin-bottom: 0.8rem; }
-    .process-desc { font-size: 0.82rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.4); }
+    .process-desc { text-align: justify; font-size: 0.82rem; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.4); }
     @media (max-width: 1500px) { .process-step { &::after { font-size: 3rem; top: 6rem; }}}
     @media (max-width: 900px) { .section-process { padding: 5rem 1.5rem; } .process-steps { grid-template-columns: 1fr 1fr; } .process-step { &::after { content: none}}}
     @media (max-width: 550px) { .process-header { margin-bottom: 0; } .process-steps { grid-template-columns: repeat(1, 1fr); }}

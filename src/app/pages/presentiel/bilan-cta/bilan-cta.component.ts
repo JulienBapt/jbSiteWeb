@@ -33,7 +33,10 @@ import { AnimationService } from '../../../core/animation.service';
     .bilan-warning { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: rgba(28,28,26,0.6); margin-bottom: 3rem; line-height: 1.5; }
     .btn-dark { display: inline-block; background: var(--dark); color: #fff; font-family: 'Barlow', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; padding: 1.1rem 2.8rem; transition: background 0.2s, transform 0.15s; &:hover { background: var(--khaki); transform: translateY(-2px); } }
     .bilan-note { margin-top: 1.2rem; font-size: 0.75rem; color: var(--dark-mid); }
-    @media (max-width: 900px) { .section-bilan { padding: 5rem 1.5rem; } .bg-text { font-size: 6rem; } }
+    @media (max-width: 1600px) {
+      .bg-text { font-size: 10vw; }
+    }
+    @media (max-width: 900px) {.section-bilan { padding: 5rem 1.5rem; } .bg-text { font-size: 4rem; } }
   `]
 })
 export class BilanCtaComponent implements AfterViewInit {
